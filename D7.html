@@ -17,20 +17,26 @@
         <!-- Example single danger button -->
         <div class="btn-group">
             <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Action
+            User Info
             </button>
-            <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">User Info</a>
-            <a class="dropdown-item" href="#">Name</a>
-            <a class="dropdown-item" href="#">UserName</a>
+            <div id="dropdown" class="dropdown-menu">
+                <a id="name" class="dropdown-item" href="#" onclick="showNames()">Name</a>
+                <a id="username" class="dropdown-item" href="#" onclick="showUserName()">Username</a>
+                <a id="email" class="dropdown-item" href="#" onclick="showEmail()">Email</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Email</a>
+            
             </div>
         </div>
     </div>
 
+    <div class="container">
+        <ul id="userData" class="list-group">
+
+        </ul>
+    </div>
+
     <div class="d-flex justify-content-center">
-        <input type="search" placeholder="Search user">
+        <input type="search" placeholder="Search user" onchange="searchUsers()">
     </div>
 
 
