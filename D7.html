@@ -11,34 +11,34 @@
     <title>D7</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1>User DB</h1>
 
-    <div class="d-flex justify-content-left ml-2 mb-2">
-        <!-- Example single danger button -->
-        <div class="btn-group">
-            <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            User Info
-            </button>
-            <div id="dropdown" class="dropdown-menu">
-                <a id="name" class="dropdown-item" href="#" onclick="showNames()">Name</a>
-                <a id="username" class="dropdown-item" href="#" onclick="showUserName()">Username</a>
-                <a id="email" class="dropdown-item" href="#" onclick="showEmail()">Email</a>
-            <div class="dropdown-divider"></div>
-            
+       <div id='main-container' class="container">
+            <div class="d-flex justify-content-left ml-2 mb-2">
+                <!-- Example single danger button -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <label class="input-group-text" for="inputGroupSelect01">User Info</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01">
+                      <option selected>Choose...</option>
+                      <option value="1">Name</option>
+                      <option value="2">Username</option>
+                      <option value="3">Email</option>
+                    </select>
+                  </div>
+
+
+            <div class="container">
+                <ul id="newList" class="list-group">
+
+                </ul>
+            </div>
+
+            <div class="d-flex justify-content-center mb-2">
+                <input id="query" type="search" placeholder="Search user" >
             </div>
         </div>
-    </div>
-
-    <div class="container">
-        <ul id="userData" class="list-group">
-
-        </ul>
-    </div>
-
-    <div class="d-flex justify-content-center">
-        <input type="search" placeholder="Search user" onchange="searchUsers()">
-    </div>
-
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
